@@ -12,7 +12,7 @@ public class Player {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="name", unique=true, length=12, nullable = false)
+    @Column(name="name", unique = true, length=12, nullable = false)
     private String name;
 
     @Column(name = "title", nullable = false, length = 30)
