@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 
-
+@NamedQuery(name = "PLAYERS_GET_ALL_COUNT", query = "select count (p) from Player p")
 @Entity
 @Table(name = "player", schema = "rpg")
 public class Player {
